@@ -1,0 +1,219 @@
+/* DESKTOP FIRST */
+body {
+    background-image: linear-gradient(#ffffff, #dda684);
+    background-repeat: no-repeat;
+}
+
+.container-grid {
+    max-width: 1366px;
+    display: grid;
+    margin: 25px auto;
+    grid-template-areas:
+        "redes logo petfriendly"
+        "navbar navbar navbar"
+        "carrousel carrousel carrousel"
+        "widget-1 main-content widget-2"
+        "widget-1 main-content widget-2"
+        "footer footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 20% auto 20%;
+    gap: 20px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.container-grid .redes {
+    grid-area: redes;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    color: #594c7f;
+    font-size: 18px;
+    letter-spacing: 3pt;
+}
+
+.container-grid .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-grid .petfriendly {
+    grid-area: petfriendly;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    color: #cc706d;
+    font-size: 18px;
+    letter-spacing: 3pt;
+    padding: 45px;
+}
+
+.container-grid .navbar {
+    max-height: 70px;
+    grid-area: navbar;
+    text-align: center;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+}
+
+.container-grid .carrousel {
+    grid-area: carrousel;
+}
+
+.container-grid .widget-1 {
+    grid-area: widget-1;
+    font-family: "trebuchet MS", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2pt;
+    word-spacing: 0.3pt;
+    line-height: 1.4;
+    padding: 5px;
+    padding: 45px;
+}
+
+.container-grid .main-content {
+    grid-area: main-content;
+    background: #ffffff34;
+    box-shadow: #81305641 1px 1px 5px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: "trebuchet MS", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2pt;
+    word-spacing: 0.3pt;
+    line-height: 1.4;
+    padding: 45px;
+
+}
+
+.container-grid .widget-2 {
+    grid-area: widget-2;
+    font-family: "trebuchet MS", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2pt;
+    word-spacing: 0.3pt;
+    line-height: 1.4;
+    padding: 45px;
+}
+
+.container-grid .footer {
+    grid-area: footer;
+    color: #a0423f;
+    text-align: center;
+    justify-content: center;
+    font-family: "trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2pt;
+    line-height: 1.2;
+}
+
+.cafe {
+    text-align: initial;
+}
+
+h5 {
+    color: #000000b0;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+h6 {
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    text-align: start;
+    font-size: 22px;
+}
+
+.btn {
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    background: #ff8ab5;
+    padding: 10px 19px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ffca91;
+    background-image: -webkit-linear-gradient(top, #ffca91, #d9855e);
+    background-image: -moz-linear-gradient(top, #ffca91, #d9855e);
+    background-image: -ms-linear-gradient(top, #ffca91, #d9855e);
+    background-image: -o-linear-gradient(top, #ffca91, #d9855e);
+    background-image: linear-gradient(to bottom, #ffca91, #d9855e);
+    text-decoration: none;
+}
+
+/* MEDIA QUERIE MOBILE HASTA 768 PIX */
+@media screen and (max-width: 768px) {
+
+body {
+    background-image: linear-gradient(#dfbcb1, #db8e77);
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas: "logo logo logo"
+                         "carrousel carrousel carrousel"
+                         "navbar navbar navbar" 
+                         "main-content main-content main-content"
+                         "widget-1 widget-1 widget-1"
+                         "widget-2 widget-2 widget-2"
+                         "petfriendly petfriendly petfriendly"
+                         "footer footer footer";
+}
+
+.container-grid .widget-1 
+.container-grid .widget-2 {
+    align-content:space-between;
+} 
+
+.navbar {
+    text-align: center;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0 50px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    line-height: 28px;
+    font-size: 18px;  
+    font-style: italic;
+    font-family: 'trebuchet MS', sans-serif;;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background: #e7c8aa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+}
